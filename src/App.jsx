@@ -18,6 +18,8 @@ import Posts from './components/Posts'
 import UseCallback from './components/UseCallback'
 import UseMemo from './components/UseMemo'
 import UseRef from './components/UseRef'
+import UseReducer from './components/UseReducer'
+import ComplexeCounter from './components/ComplexeCounter'
 function App() {
   // const [toggle,setToggle] = useState(false);
   return (
@@ -46,7 +48,9 @@ function App() {
     {/* <Timer/> */}
     {/* <UseCallback/> */}
     {/* <UseMemo/> */}
-    <UseRef/>
+    {/* <UseRef/> */}
+    {/* <UseReducer/> */}
+    <ComplexeCounter/> 
     </>
   )
 }
