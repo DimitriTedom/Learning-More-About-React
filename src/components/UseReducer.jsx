@@ -20,7 +20,8 @@ const UseReducer = () => {
    const [counter,dispatch] =  useReducer(reducer,initialState); //const [statename,function]. in our case, the state name is "counter"
   return (
     <div>
-         <button onClick={()=> dispatch("increment")}>+</button>
+         <button onClick={()=> dispatch("increment")}>+</button> 
+         {/* we add dispatch function here beacuse we modify the state iff the user click on this button */}
          <p>Counter - {counter}</p>
          <button onClick={()=> dispatch("decrement")}>-</button>
     </div>

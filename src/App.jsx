@@ -1,25 +1,27 @@
-import { useState } from 'react'
-import './App.css'
-import List from './components/List'
-import CounterApp from './components/CounterApp'
-import Form from './components/Form'
-import ClickCounterByHOC from './components/ClickCounterByHOC'
-import HoverCounterByHOC from './components/HoverCounterByHOC'
-import RegistrationForm from './components/RegistrationForm'
-import RenderProps from './components/RenderProps'
-import Counter from './components/Counter'
-import ClickCounterByRP from './components/ClickCounterByRP'
-import HoverCounterByRP from './components/HoverCounterByRP'
-import ComponentOne from './components/ComponentOne'
-import CourseContext from './components/context/courseContext'
-import UseEffectCom from './components/UseEffect'
-import Timer from './components/Timer'
-import Posts from './components/Posts'
-import UseCallback from './components/UseCallback'
-import UseMemo from './components/UseMemo'
-import UseRef from './components/UseRef'
-import UseReducer from './components/UseReducer'
-import ComplexeCounter from './components/ComplexeCounter'
+// import { useState } from 'react'
+// import './App.css'
+// import List from './components/List'
+// import CounterApp from './components/CounterApp'
+// import Form from './components/Form'
+// import ClickCounterByHOC from './components/ClickCounterByHOC'
+// import HoverCounterByHOC from './components/HoverCounterByHOC'
+// import RegistrationForm from './components/RegistrationForm'
+// import RenderProps from './components/RenderProps'
+// import Counter from './components/Counter'
+// import ClickCounterByRP from './components/ClickCounterByRP'
+// import HoverCounterByRP from './components/HoverCounterByRP'
+// import ComponentOne from './components/ComponentOne'
+// import CourseContext from './components/context/courseContext'
+// import UseEffectCom from './components/UseEffect'
+// import Timer from './components/Timer'
+// import Posts from './components/Posts'
+// import UseCallback from './components/UseCallback'
+// import UseMemo from './components/UseMemo'
+// import UseRef from './components/UseRef'
+// import UseReducer from './components/UseReducer'
+// import ComplexeCounter from './components/ComplexeCounter'
+// import PostListWithoutReducer from './components/PostListWithoutReducer'
+import PostListWithReducer from './components/PostListWithReducer'
 function App() {
   // const [toggle,setToggle] = useState(false);
   return (
@@ -50,7 +52,9 @@ function App() {
     {/* <UseMemo/> */}
     {/* <UseRef/> */}
     {/* <UseReducer/> */}
-    <ComplexeCounter/> 
+    {/* <ComplexeCounter/>  */}
+    {/* <PostListWithoutReducer/> */}
+    <PostListWithReducer/>
     </>
   )
 }
