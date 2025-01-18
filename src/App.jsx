@@ -17,8 +17,9 @@ import Timer from './components/Timer'
 import Posts from './components/Posts'
 import UseCallback from './components/UseCallback'
 import UseMemo from './components/UseMemo'
+import UseRef from './components/UseRef'
 function App() {
-  const [toggle,setToggle] = useState(false);
+  // const [toggle,setToggle] = useState(false);
   return (
     <>
   {/* <List/>
@@ -44,7 +45,8 @@ function App() {
     {/* <UseEffectCom/>  */}
     {/* <Timer/> */}
     {/* <UseCallback/> */}
-    <UseMemo/>
+    {/* <UseMemo/> */}
+    <UseRef/>
     </>
   )
 }
