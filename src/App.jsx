@@ -21,7 +21,8 @@
 // import UseReducer from './components/UseReducer'
 // import ComplexeCounter from './components/ComplexeCounter'
 // import PostListWithoutReducer from './components/PostListWithoutReducer'
-import PostListWithReducer from './components/PostListWithReducer'
+import PostListWithCustoomHook from './components/PostListWithCustoomHook'
+// import PostListWithReducer from './components/PostListWithReducer'
 function App() {
   // const [toggle,setToggle] = useState(false);
   return (
@@ -54,7 +55,8 @@ function App() {
     {/* <UseReducer/> */}
     {/* <ComplexeCounter/>  */}
     {/* <PostListWithoutReducer/> */}
-    <PostListWithReducer/>
+    {/* <PostListWithReducer/> */}
+    <PostListWithCustoomHook/>
     </>
   )
 }
