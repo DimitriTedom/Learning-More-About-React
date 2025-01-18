@@ -15,6 +15,8 @@ import CourseContext from './components/context/courseContext'
 import UseEffectCom from './components/UseEffect'
 import Timer from './components/Timer'
 import Posts from './components/Posts'
+import UseCallback from './components/UseCallback'
+import UseMemo from './components/UseMemo'
 function App() {
   const [toggle,setToggle] = useState(false);
   return (
@@ -38,9 +40,11 @@ function App() {
     </CourseContext.Provider> */}
     {/* <button onClick={()=> setToggle(!toggle)}>Toggle</button>
     {toggle ? <CounterApp/> : <Timer/>} */}
-    <Posts/>
+    {/* <Posts/> */}
     {/* <UseEffectCom/>  */}
     {/* <Timer/> */}
+    {/* <UseCallback/> */}
+    <UseMemo/>
     </>
   )
 }
