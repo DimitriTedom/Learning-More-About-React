@@ -35,6 +35,8 @@ import NotFound from "./components/pages/NotFound"
 import PostList from "./components/pages/PostList"
 import PostDetail from "./components/pages/PostDetail"
 import HotPosts from "./components/pages/HotPosts"
+import ProductList from "./components/pages/ProductList"
+import FeaturedProduct from "./components/pages/FeaturedProduct"
 function App() {
   // const [toggle,setToggle] = useState(false);
   return (
@@ -78,10 +80,11 @@ function App() {
       <Route path="order-confirmation" element={<OrderConfirmation/>}/>
       <Route path="posts" element={<PostList/>}/>
       <Route path="posts/hot" element={<HotPosts/>}/>
+      <Route path="products" element={<ProductList/>}/>
       <Route path="posts/:postId" element={<PostDetail/>}/>
       <Route path="*" element={<NotFound/>}/> 
       {/* in react-dom, the star(*) is used to match any route that is not matched by any other route. */}
-
+      <Route path="productss/featured" element={<FeaturedProduct/>}/>
     </Routes>
     </>
   )
