@@ -22,10 +22,19 @@
 // import ComplexeCounter from './components/ComplexeCounter'
 // import PostListWithoutReducer from './components/PostListWithoutReducer'
 // import PostListWithCustoomHook from './components/PostListWithCustoomHook'
-
-import CssStyle from "./components/CssStyle"
-
+// import { useState } from "react"
+// import CssStyle from "./components/CssStyle"
+import { Routes, Route } from "react-router-dom"
+import Home from "./components/pages/Home"
+import About from "./components/pages/About"
+import Contact from "./components/pages/Contact"
+import NavBar from "./components/NavBar"
+import OrderConfirmation from "./components/pages/OrderConfirmation"
 // import PostListWithReducer from './components/PostListWithReducer'
+import NotFound from "./components/pages/NotFound"
+import PostList from "./components/pages/PostList"
+import PostDetail from "./components/pages/PostDetail"
+import HotPosts from "./components/pages/HotPosts"
 function App() {
   // const [toggle,setToggle] = useState(false);
   return (
@@ -60,7 +69,20 @@ function App() {
     {/* <PostListWithoutReducer/> */}
     {/* <PostListWithReducer/> */}
     {/* <PostListWithCustoomHook/> */}
-    <CssStyle/>
+    {/* <CssStyle/> */}
+      <NavBar/>
+    <Routes>
+      <Route path="/" element={<Home/>}/>
+      <Route path="about" element={<About/>}/>
+      <Route path="contact" element={<Contact/>}/>
+      <Route path="order-confirmation" element={<OrderConfirmation/>}/>
+      <Route path="posts" element={<PostList/>}/>
+      <Route path="posts/hot" element={<HotPosts/>}/>
+      <Route path="posts/:postId" element={<PostDetail/>}/>
+      <Route path="*" element={<NotFound/>}/> 
+      {/* in react-dom, the star(*) is used to match any route that is not matched by any other route. */}
+
+    </Routes>
     </>
   )
 }

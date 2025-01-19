@@ -1,4 +1,4 @@
-import React, { useReducer } from 'react'
+import { useReducer } from 'react'
 const initialState = 0;
 
 const reducer = (state,action)=>{
@@ -7,13 +7,10 @@ const reducer = (state,action)=>{
     switch (action) {
         case "increment":
             return state+1;
-            break;
         case "decrement":
             return state-1;
-            break;
         default:
             return state;
-            break;
     }
 }
 const UseReducer = () => {

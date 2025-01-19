@@ -1,0 +1,16 @@
+import { useNavigate } from "react-router-dom"
+const Home = () => {
+  const navigate = useNavigate();
+
+  const handleNavigate = ()=>{
+    navigate('order-confirmation')
+  }
+  return (
+    <div>
+      <h2>This is Home Page</h2>
+      <button onClick={handleNavigate}>Place order</button>
+    </div>
+  )
+}
+
+export default Home
